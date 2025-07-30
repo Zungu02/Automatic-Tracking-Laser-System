@@ -1,2 +1,5 @@
 Prototxt file via Widget
 wget -O MobileNetSSD_deploy.prototxt.txt "https://gist.githubusercontent.com/mm-aditya/797a3e7ee041ef88cd4d9e293eaacf9f/raw"
+
+.caffemodel weights via SourceForge
+wget -O MobileNetSSD_deploy.caffemodel "https://sourceforge.net/projects/ip-cameras-for-vlc/files/MobileNetSSD_deploy.caffemodel/download"
