@@ -1,4 +1,14 @@
-# Automatic-Tracking-Laser-System
+# Automatic-Tracking,Detection & Patrol-Laser-System
+## Overview
+The prototype uses OpenCv with MobileNet-SSD to detect an object(Human ,Class ID = 15) infront of the camera ,then tries to calculate the center of the bounding box to fetch the coordinate position which is then transmitted via serial communication toward the ESP32 to drive the ST3125 bus servos (A Pan Tilt Mechanism) for smooth trackiing of the detected person . In the absence of the detected person the system offers a patrol mechanism to search for any movement which might suspectedly be person .
+
+## Hardware Used
+1. Raspberrypi 4B.
+2. General Driver Board for Robotics.
+3. ST3125 Serial Bus Servos.
+4. PiCamera G.
+5. A Laser module.
+   
 ## Setup and Installation
 ### Setting Up Open-CV on Raspberry Pi 'Buster' OS
 
