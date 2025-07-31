@@ -57,3 +57,5 @@ Verify import cv2 works and the sample script runs
      
       python3 facetracker.py
 
+Below shows what you would see on your Desktop as you run the above code.
+
