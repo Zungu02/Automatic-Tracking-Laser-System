@@ -5,11 +5,23 @@
 ![License](https://img.shields.io/github/license/Zungu02/Automatic-Tracking-Tracking-Patrol-Laser-System)
 ![Last Commit](https://img.shields.io/github/last-commit/Zungu02/Automatic-Tracking-Tracking-Patrol-Laser-System)
 
-# Automatic-Tracking,Detection & Patrol-Laser-System
+# 🎯 Automatic Tracking Patrol Laser System
+An intelligent Raspberry Pi–powered system that detects, tracks, and follows targets using real-time object detection and servo-controlled laser aiming.
 ![System Output](https://github.com/Zungu02/Automatic-Tracking-Tracking-Patrol-Laser-System/blob/main/media/Screenshot%202025-07-31%20014728.png)
 ## Overview
 The prototype uses OpenCv with MobileNet-SSD to detect an object(Human ,Class ID = 15) infront of the camera ,then tries to calculate the center of the bounding box to fetch the coordinate position which is then transmitted via serial communication toward the ESP32 to drive the ST3125 bus servos (A Pan Tilt Mechanism) for smooth trackiing of the detected person in a restricted range (45 degerees Pan axis & 10 degrees tilt axis) and manual control of laser module(currently) . In the absence of the detected person the system offers a patrol mechanism to search for any movement which might suspectedly be person .
 
+## 🚀 Features
+- Real-time human detection
+- Laser aiming using servo motors
+- UART communication with ESP32
+
+## 📦 Tech Stack
+- Raspberry Pi 4B
+- Python + OpenCV
+- MobileNet-SSD
+- ESP32 (C++ UART servo controller)
+  
 ## Hardware Used
 1. Raspberrypi 4B.
 2. General Driver Board for Robotics.
@@ -17,7 +29,7 @@ The prototype uses OpenCv with MobileNet-SSD to detect an object(Human ,Class ID
 4. PiCamera G.
 5. A Laser module.
    
-## Setup and Installation
+## ⚙️Setup and Installation
 ### Setting Up Open-CV on Raspberry Pi 'Buster' OS
 
 This is an in-depth procedure to follow to get your Raspberry Pi to install Open-CV that will work with Computer Vision for Object Identification.Turn on a Raspberry Pi 4 Model B running a fresh version of Raspberry Pi 'Buster' OS and connect it to the Internet.
